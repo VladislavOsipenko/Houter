@@ -33,6 +33,25 @@ html {
     }
 }
 
+.divider {
+    display: flex;
+    gap: .8rem;
+    align-items: center;
+    &__line {
+        width: 3.2rem;
+        height: 1px;
+        background: var(--yellow-500, #F59E0B);
+    }
+    &__text {
+        color: var(--yellow-500, #F59E0B);
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+
+}
+
 .fz__32 {
     font-weight: 600;
     font-size: 3.2rem;
@@ -138,5 +157,7 @@ html {
 }
 
 @import "blocks/_header";
+@import "blocks/_main";
+@import "blocks/_house";
     
 

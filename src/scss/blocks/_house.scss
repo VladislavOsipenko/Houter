@@ -1,0 +1,137 @@
+.house {
+
+    &__container {
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+    }
+
+    &__tabs {
+        display: flex;
+        gap: 1.6rem;
+    }
+
+    &__tab {
+        cursor: pointer;
+        display: flex;
+        padding: 1.2rem 2.4rem;
+        align-items: center;
+        gap: .8rem;
+        border-radius: 3.2rem;
+        border: 1px solid var(--neutral-300, #E0E3EB);
+        transition: .2s all;
+        &:hover {
+            transition: .2s all;
+            transform: scale(1.05);
+            border: none;
+            background: var(--green-100, #D1FAE5);
+            
+        }
+    }
+
+    &__tab-icon {
+        &:hover {
+            svg {
+                fill: #10B981;
+            }
+        }
+        
+    }
+
+    &__tab-text {
+        &:hover {
+            color: #10B981;
+        }
+    }
+
+    &__arrows {
+        display: flex;
+        gap: .8rem;
+    }
+
+    &__arrow-left {
+        cursor: pointer;
+        display: inline-flex;
+        padding: 1.2rem 1.6rem;
+        align-items: center;
+        gap: 4px;
+        border-radius: 3.2rem;
+        background: var(--neutral-300, #E0E3EB);
+        transition: .2s all;
+        &:hover {
+            transition: .2s all;
+            transform: scale(1.05);
+            background: var(--green-500, #10B981);
+        }
+    }
+
+    &__arrow-right {
+        cursor: pointer;
+        display: inline-flex;
+        padding: 1.2rem 1.6rem;
+        align-items: center;
+        gap: 4px;
+        border-radius: 3.2rem;
+        background: var(--neutral-300, #E0E3EB);
+        transition: .2s all;
+        &:hover {
+            transition: .2s all;
+            transform: scale(1.05);
+            background: var(--green-500, #10B981);
+        }
+
+    }
+
+    &__items {
+    }
+
+    &__item {
+    }
+
+    &__img {
+    }
+
+    &__popular {
+    }
+
+    &__item-title {
+    }
+
+    &__item-price {
+    }
+
+    &__item-heuman {
+    }
+
+    &__item-icon {
+    }
+
+    &__item-wrapper {
+    }
+
+    &__item-name {
+    }
+
+    &__item-city {
+    }
+
+    &__newhouse {
+    }
+
+    &__bestdeal {
+    }
+}
+.divider {
+
+    &__line {
+    }
+
+    &__text {
+    }
+}
