@@ -360,6 +360,7 @@
         }
         &__swiper-wrapper {
             flex-direction: column;
+            gap: 0;
             align-items: center;
         }
     }
@@ -436,6 +437,12 @@
 }
 @media (max-width: 500px) {
     .main {
+        &__container {
+            width: 120rem;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
         &__blur {
             div {
                 &:first-child {

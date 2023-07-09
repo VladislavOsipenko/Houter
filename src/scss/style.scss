@@ -121,6 +121,15 @@ html {
     color: #3C4563;
 }
 
+.fz__16-3 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-transform: capitalize;
+    color: var(--mrt-app-headline, #1B1C57);
+    opacity: 0.75;
+}
+
 .fz__14 {
     font-weight: 500;
     font-size: 1.4rem;
@@ -159,5 +168,5 @@ html {
 @import "blocks/_header";
 @import "blocks/_main";
 @import "blocks/_house";
-    
+@import "blocks/_detail";
 

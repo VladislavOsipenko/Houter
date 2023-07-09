@@ -16,7 +16,7 @@
                         <div class="main__item">
                             <div class="main__item-wrapper">
                                 <div class="main__logo">
-                                    <img src="@img/logo.svg" alt="logo">
+                                    <img src="@img/logo.svg" alt="logo" loading="lazy">
                                     <div class="main__logo-text">
                                         Hounter
                                     </div>
@@ -29,12 +29,12 @@
                                 </div>
                                 <form action="#" class="main__form">
                                     <div class="main__form-local">
-                                        <img src="@img/location.svg" alt="local">
+                                        <img src="@img/location.svg" alt="local" loading="lazy">
                                     </div>
                                     <input class="main__form-input fz__14" type="search" required placeholder="Search for the location you want!">
                                     <button class="main__form-btn">
                                         Search
-                                        <img src="@img/arow.svg" alt="arow">
+                                        <img src="@img/arow.svg" alt="arow" loading="lazy">
                                     </button>
                                 </form>
                                 <div class="main__secondtitle fz__16">
@@ -64,7 +64,7 @@
                                             <div class="main__swiper-item">
                                                 <div class="main__swiper-block">
                                                     <div class="main__swiper-icon">
-                                                        <img id="main-icon-1" src="@img/icon_1.svg" alt="icon">
+                                                        <img id="main-icon-1" src="@img/icon_1.svg" alt="icon" loading="lazy">
                                                     </div>
                                                     <div class="main__swiper-info">
                                                         <div class="main__swiper-title">1K+ People</div>
@@ -79,7 +79,7 @@
                                             <div class="main__swiper-item" id="swiper-item-2">
                                                 <div class="main__swiper-block">
                                                     <div class="main__swiper-icon" id="icon-1">
-                                                        <img id="main-icon-2" src="@img/icon_2.svg" alt="icon">
+                                                        <img id="main-icon-2" src="@img/icon_2.svg" alt="icon" loading="lazy">
                                                     </div>
                                                     <div class="main__swiper-info">
                                                         <div class="main__swiper-title">56 Houses</div>
@@ -94,7 +94,7 @@
                                             <div class="main__swiper-item" id="swiper-item-3">
                                                 <div class="main__swiper-block">
                                                     <div class="main__swiper-icon" id="icon-2">
-                                                        <img id="main-icon-3" src="@img/icon_3.svg" alt="icon">
+                                                        <img id="main-icon-3" src="@img/icon_3.svg" alt="icon" loading="lazy">
                                                     </div>
                                                     <div class="main__swiper-info">
                                                         <div class="main__swiper-title">4K+</div>
@@ -121,160 +121,612 @@
                     </div>
                     <div class="house__menu">
                         <div class="house__title fz__32">Featured House</div>
-                        <div class="house__tabs">
-                            <div class="house__tab">
+                        <ul class="house__tabs">
+                            <li class="house__tab house__tab_active">
                                 <div class="house__tab-icon">
-                                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M18 8.83189V17.5C17.9998 17.7719 17.9262 18.0386 17.7868 18.272C17.6475 18.5054 17.4476 18.6968 17.2084 18.8259C16.9916 18.9432 16.7485 19.0031 16.5021 18.9999H11.9967C11.7978 18.9999 11.607 18.9209 11.4664 18.7803C11.3257 18.6396 11.2467 18.4488 11.2467 18.2499V13.7493C11.2467 13.5504 11.1677 13.3596 11.0271 13.2189C10.8864 13.0783 10.6956 12.9993 10.4967 12.9993H7.49673C7.29781 12.9993 7.10705 13.0783 6.9664 13.2189C6.82574 13.3596 6.74673 13.5504 6.74673 13.7493V18.2499C6.74673 18.4488 6.66771 18.6396 6.52706 18.7803C6.3864 18.9209 6.19564 18.9999 5.99673 18.9999H1.5002C1.28754 19.0005 1.07723 18.9556 0.883354 18.8682C0.689475 18.7808 0.516507 18.653 0.37604 18.4934C0.12946 18.2082 -0.00428751 17.8427 8.829e-06 17.4657V8.8318C0.000172265 8.62281 0.0439196 8.41615 0.128457 8.22503C0.212994 8.0339 0.336463 7.86251 0.490978 7.7218L7.99032 0.903078C8.26579 0.650753 8.62579 0.510777 8.99936 0.510742C9.37293 0.510707 9.73296 0.650617 10.0085 0.90289L17.5091 7.72189C17.6636 7.86263 17.787 8.03403 17.8716 8.22515C17.9561 8.41627 17.9998 8.62292 18 8.83189Z" fill="#10B981"/>
-                                    </svg>
-                                        
+                                    <svg width="18" height="19" viewBox="0 0 18 19" fill="#10B981" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 8.83189V17.5C17.9998 17.7719 17.9262 18.0386 17.7868 18.272C17.6475 18.5054 17.4476 18.6968 17.2084 18.8259C16.9916 18.9432 16.7485 19.0031 16.5021 18.9999H11.9967C11.7978 18.9999 11.607 18.9209 11.4664 18.7803C11.3257 18.6396 11.2467 18.4488 11.2467 18.2499V13.7493C11.2467 13.5504 11.1677 13.3596 11.0271 13.2189C10.8864 13.0783 10.6956 12.9993 10.4967 12.9993H7.49673C7.29781 12.9993 7.10705 13.0783 6.9664 13.2189C6.82574 13.3596 6.74673 13.5504 6.74673 13.7493V18.2499C6.74673 18.4488 6.66771 18.6396 6.52706 18.7803C6.3864 18.9209 6.19564 18.9999 5.99673 18.9999H1.5002C1.28754 19.0005 1.07723 18.9556 0.883354 18.8682C0.689475 18.7808 0.516507 18.653 0.37604 18.4934C0.12946 18.2082 -0.00428751 17.8427 8.829e-06 17.4657V8.8318C0.000172265 8.62281 0.0439196 8.41615 0.128457 8.22503C0.212994 8.0339 0.336463 7.86251 0.490978 7.7218L7.99032 0.903078C8.26579 0.650753 8.62579 0.510777 8.99936 0.510742C9.37293 0.510707 9.73296 0.650617 10.0085 0.90289L17.5091 7.72189C17.6636 7.86263 17.787 8.03403 17.8716 8.22515C17.9561 8.41627 17.9998 8.62292 18 8.83189Z" fill="#888B97"/>
+                                    </svg>  
                                 </div>
-                                <div class="house__tab-text fz__18-2">
+                                <p class="house__tab-text fz__18-2 " >
                                     House
-                                </div>
-                            </div>
-                            <div class="house__tab">
+                                </p>
+                            </li>
+                            <li class="house__tab">
                                 <div class="house__tab-icon">
-                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="#10B981" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M4 17.9999H1C0.45 17.9999 0 17.5499 0 16.9999V5.68994C0 5.26994 0.25 4.89994 0.64 4.74994L11.64 0.519938C11.7921 0.46126 11.9561 0.440637 12.118 0.459864C12.2798 0.47909 12.4345 0.537584 12.5686 0.630254C12.7027 0.722923 12.8121 0.846959 12.8873 0.991563C12.9624 1.13617 13.0012 1.29696 13 1.45994V6.99994H5C4.45 6.99994 4 7.44994 4 7.99994V17.9999ZM14 8.99994H7C6.45 8.99994 6 9.44994 6 9.99994V16.9999C6 17.5499 6.45 17.9999 7 17.9999H11V13.9999C11 13.4499 11.45 12.9999 12 12.9999C12.55 12.9999 13 13.4499 13 13.9999V17.9999H17C17.55 17.9999 18 17.5499 18 16.9999V8.99994C18 7.89994 17.1 6.99994 16 6.99994C14.9 6.99994 14 7.89994 14 8.99994Z" fill="#888B97"/>
                                     </svg>
                                 </div>
-                                <div class="house__tab-text fz__18-2">
+                                <p class="house__tab-text fz__18-2">
                                     Villa
-                                </div>
-                            </div>
-                            <div class="house__tab">
+                                </p>
+                            </li>
+                            <li class="house__tab">
                                 <div class="house__tab-icon">
                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M14 8V2C14 0.9 13.1 0 12 0H6C4.9 0 4 0.9 4 2V4H2C0.9 4 0 4.9 0 6V16C0 17.1 0.9 18 2 18H8V14H10V18H16C17.1 18 18 17.1 18 16V10C18 8.9 17.1 8 16 8H14ZM4 16H2V14H4V16ZM4 12H2V10H4V12ZM4 8H2V6H4V8ZM8 12H6V10H8V12ZM8 8H6V6H8V8ZM8 4H6V2H8V4ZM12 12H10V10H12V12ZM12 8H10V6H12V8ZM12 4H10V2H12V4ZM16 16H14V14H16V16ZM16 12H14V10H16V12Z" fill="#888B97"/>
                                     </svg>
                                 </div>
-                                <div class="house__tab-text fz__18-2">
+                                <p class="house__tab-text fz__18-2">
                                     Apartment
-                                </div>
-                            </div>
-                        </div>
+                                </p>
+                            </li>
+                        </ul>
                         <div class="house__arrows">
                             <div class="house__arrow-left">
-                                <img src="@img/arrow-left.svg" alt="arrow-left">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.5078 22.1645C17.7781 22.165 18.04 22.0703 18.2482 21.8967C18.3653 21.799 18.4622 21.679 18.5331 21.5436C18.6041 21.4081 18.6478 21.2599 18.6618 21.1075C18.6758 20.955 18.6597 20.8012 18.6145 20.655C18.5694 20.5088 18.496 20.373 18.3986 20.2554L13.2158 14.0159L18.2135 7.76475C18.3096 7.64567 18.3813 7.50867 18.4246 7.3616C18.4679 7.21453 18.4819 7.0603 18.4658 6.90777C18.4497 6.75524 18.4038 6.60742 18.3307 6.47281C18.2576 6.3382 18.1588 6.21945 18.0399 6.12339C17.9202 6.01741 17.7801 5.93748 17.6282 5.8886C17.4764 5.83972 17.3161 5.82295 17.1575 5.83935C16.9989 5.85574 16.8454 5.90495 16.7066 5.98388C16.5678 6.0628 16.4467 6.16975 16.3509 6.298L10.7632 13.2825C10.593 13.4908 10.5 13.7521 10.5 14.0217C10.5 14.2913 10.593 14.5526 10.7632 14.7609L16.5476 21.7454C16.6636 21.8863 16.811 21.9976 16.9779 22.0705C17.1447 22.1433 17.3263 22.1755 17.5078 22.1645Z" fill="#3C4563"/>
+                                </svg>
                             </div>
                             <div class="house__arrow-right">
-                                <img src="@img/arrow-right.svg" alt="arrow-right">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.6589 5.83552C11.3886 5.83499 11.1266 5.92971 10.9185 6.10326C10.8014 6.20098 10.7045 6.321 10.6336 6.45644C10.5626 6.59188 10.5189 6.74007 10.5049 6.89254C10.4909 7.04501 10.507 7.19875 10.5521 7.34496C10.5973 7.49118 10.6707 7.62699 10.7681 7.74462L15.9509 13.9841L10.9532 20.2353C10.8571 20.3543 10.7854 20.4913 10.7421 20.6384C10.6988 20.7855 10.6848 20.9397 10.7009 21.0922C10.717 21.2448 10.7629 21.3926 10.836 21.5272C10.9091 21.6618 11.0079 21.7806 11.1267 21.8766C11.2464 21.9826 11.3866 22.0625 11.5385 22.1114C11.6903 22.1603 11.8506 22.177 12.0092 22.1607C12.1678 22.1443 12.3213 22.0951 12.4601 22.0161C12.5989 21.9372 12.72 21.8303 12.8158 21.702L18.4035 14.7175C18.5736 14.5092 18.6667 14.2479 18.6667 13.9783C18.6667 13.7087 18.5736 13.4474 18.4035 13.2391L12.6191 6.25459C12.5031 6.11371 12.3556 6.00235 12.1888 5.92954C12.022 5.85673 11.8404 5.82452 11.6589 5.83552Z" fill="#3C4563"/>
+                                </svg>
                             </div>
                         </div>
                     </div>
-                    <div class="house__items">
-                        <div class="house__item">
-                            <div class="house__img">
-                                <img src="@img/house_1.png" alt="house_1">
-                                <div class="house__popular">
-                                    <img src="@img/popular.svg" alt="popular">
-                                    <p>Popular</p>
-                                </div>
-                            </div>
-                            <div class="house__item-title fz__24">
-                                Roselands House
-                            </div>
-                            <div class="house__item-price fz__20">
-                                $ 35.000.000
-                            </div>
-                            <div class="house__item-heuman">
-                                <div class="house__item-icon">
-                                    <img src="@img/dianne.svg" alt="dianne">
-                                </div>
-                                <div class="house__item-wrapper">
-                                    <div class="house__item-name fz__18">
-                                        Dianne Russell
+                    <div class="house__items swiper-container house__items_active">
+                        <div class=" house__items-wrapper swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="house__item">
+                                    <div class="house__img">
+                                        <img class="house__img-main" src="@img/house_1.png" alt="house_1" loading="lazy">
+                                        <div class="house__popular">
+                                            <img src="@img/popular.svg" alt="popular" loading="lazy">
+                                            <p>Popular</p>
+                                        </div>
                                     </div>
-                                    <div class="house__item-city fz__14-2">
-                                        Manchester, Kentucky
+                                    <div class="house__item-title fz__24">
+                                        Roselands House
+                                    </div>
+                                    <div class="house__item-price fz__20">
+                                        $ 35.000.000
+                                    </div>
+                                    <div class="house__item-heuman">
+                                        <div class="house__item-icon">
+                                            <img src="@img/dianne.svg" alt="dianne" loading="lazy">
+                                        </div>
+                                        <div class="house__item-wrapper">
+                                            <div class="house__item-name fz__18">
+                                                Dianne Russell
+                                            </div>
+                                            <div class="house__item-city fz__14-2">
+                                                Manchester, Kentucky
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="house__item">
+                                    <div class="house__img">
+                                        <img class="house__img-main" src="@img/house_2.png" alt="house_2" loading="lazy">
+                                        <div class="house__newhouse">
+                                            <img src="@img/newhouse.svg" alt="newhouse" loading="lazy">
+                                            <p>New house</p>
+                                        </div>
+                                    </div>
+                                    <div class="house__item-title fz__24">
+                                        Woodlandside
+                                    </div>
+                                    <div class="house__item-price fz__20">
+                                        $ 20.000.000
+                                    </div>
+                                    <div class="house__item-heuman">
+                                        <div class="house__item-icon">
+                                            <img src="@img/robert.svg" alt="robert" loading="lazy">
+                                        </div>
+                                        <div class="house__item-wrapper">
+                                            <div class="house__item-name fz__18">
+                                                Robert Fox
+                                            </div>
+                                            <div class="house__item-city fz__14-2">
+                                                Dr. San Jose, South Dakota
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="house__item">
+                                    <div class="house__img">
+                                        <img class="house__img-main" src="@img/house_1.png" alt="house_1" loading="lazy">
+                                        <div class="house__popular">
+                                            <img src="@img/popular.svg" alt="popular" loading="lazy">
+                                            <p>Popular</p>
+                                        </div>
+                                    </div>
+                                    <div class="house__item-title fz__24">
+                                        Roselands House
+                                    </div>
+                                    <div class="house__item-price fz__20">
+                                        $ 35.000.000
+                                    </div>
+                                    <div class="house__item-heuman">
+                                        <div class="house__item-icon">
+                                            <img src="@img/dianne.svg" alt="dianne" loading="lazy">
+                                        </div>
+                                        <div class="house__item-wrapper">
+                                            <div class="house__item-name fz__18">
+                                                Dianne Russell
+                                            </div>
+                                            <div class="house__item-city fz__14-2">
+                                                Manchester, Kentucky
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="house__item">
+                                    <div class="house__img">
+                                        <img class="house__img-main" src="@img/house_3.png" alt="house_3" loading="lazy">
+                                        <div class="house__bestdeal">
+                                            <img src="@img/bestdeal.svg" alt="bestdeal" loading="lazy">
+                                            <p>Best Deals</p>
+                                        </div>
+                                    </div>
+                                    <div class="house__item-title fz__24">
+                                        The Old Lighthouse
+                                    </div>
+                                    <div class="house__item-price fz__20">
+                                        $ 44.000.000
+                                    </div>
+                                    <div class="house__item-heuman">
+                                        <div class="house__item-icon">
+                                            <img src="@img/ronald.svg" alt="ronald" loading="lazy">
+                                        </div>
+                                        <div class="house__item-wrapper">
+                                            <div class="house__item-name fz__18">
+                                                Ronald Richards
+                                            </div>
+                                            <div class="house__item-city fz__14-2">
+                                                Santa Ana, Illinois
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="house__item">
+                                    <div class="house__img">
+                                        <img class="house__img-main" src="@img/house_1.png" alt="house_1" loading="lazy">
+                                        <div class="house__popular">
+                                            <img src="@img/popular.svg" alt="popular" loading="lazy">
+                                            <p>Popular</p>
+                                        </div>
+                                    </div>
+                                    <div class="house__item-title fz__24">
+                                        Cosmo's House
+                                    </div>
+                                    <div class="house__item-price fz__20">
+                                        $ 22.000.000
+                                    </div>
+                                    <div class="house__item-heuman">
+                                        <div class="house__item-icon">
+                                            <img src="@img/jenny.svg" alt="jenny" loading="lazy">
+                                        </div>
+                                        <div class="house__item-wrapper">
+                                            <div class="house__item-name fz__18">
+                                                Jenny Wilson
+                                            </div>
+                                            <div class="house__item-city fz__14-2">
+                                                Preston Rd. Inglewood, Maine 98380
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="house__item">
+                                    <div class="house__img">
+                                        <img class="house__img-main" src="@img/house_1.png" alt="house_1" loading="lazy">
+                                        <div class="house__popular">
+                                            <img src="@img/popular.svg" alt="popular" loading="lazy">
+                                            <p>Popular</p>
+                                        </div>
+                                    </div>
+                                    <div class="house__item-title fz__24">
+                                        Roselands House
+                                    </div>
+                                    <div class="house__item-price fz__20">
+                                        $ 35.000.000
+                                    </div>
+                                    <div class="house__item-heuman">
+                                        <div class="house__item-icon">
+                                            <img src="@img/dianne.svg" alt="dianne" loading="lazy">
+                                        </div>
+                                        <div class="house__item-wrapper">
+                                            <div class="house__item-name fz__18">
+                                                Dianne Russell
+                                            </div>
+                                            <div class="house__item-city fz__14-2">
+                                                Manchester, Kentucky
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="house__item">
-                            <div class="house__img">
-                                <img src="@img/house_2.png" alt="house_2">
-                                <div class="house__newhouse">
-                                    <img src="@img/newhouse.svg" alt="newhouse">
-                                    <p>New house</p>
-                                </div>
-                            </div>
-                            <div class="house__item-title fz__24">
-                                Woodlandside
-                            </div>
-                            <div class="house__item-price fz__20">
-                                $ 20.000.000
-                            </div>
-                            <div class="house__item-heuman">
-                                <div class="house__item-icon">
-                                    <img src="@img/robert.svg" alt="robert">
-                                </div>
-                                <div class="house__item-wrapper">
-                                    <div class="house__item-name fz__18">
-                                        Robert Fox
+                    </div>
+                    <div class="house__items swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="house__item">
+                                    <div class="house__img">
+                                        <img class="house__img-main" src="@img/house_2.png" alt="house_2" loading="lazy">
+                                        <div class="house__newhouse">
+                                            <img src="@img/newhouse.svg" alt="newhouse" loading="lazy">
+                                            <p>New house</p>
+                                        </div>
                                     </div>
-                                    <div class="house__item-city fz__14-2">
-                                        Dr. San Jose, South Dakota
+                                    <div class="house__item-title fz__24">
+                                        Woodlandside
+                                    </div>
+                                    <div class="house__item-price fz__20">
+                                        $ 20.000.000
+                                    </div>
+                                    <div class="house__item-heuman">
+                                        <div class="house__item-icon">
+                                            <img src="@img/robert.svg" alt="robert" loading="lazy">
+                                        </div>
+                                        <div class="house__item-wrapper">
+                                            <div class="house__item-name fz__18">
+                                                Robert Fox
+                                            </div>
+                                            <div class="house__item-city fz__14-2">
+                                                Dr. San Jose, South Dakota
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="house__item">
+                                    <div class="house__img">
+                                        <img class="house__img-main" src="@img/house_1.png" alt="house_1" loading="lazy">
+                                        <div class="house__popular">
+                                            <img src="@img/popular.svg" alt="popular" loading="lazy">
+                                            <p>Popular</p>
+                                        </div>
+                                    </div>
+                                    <div class="house__item-title fz__24">
+                                        Roselands House
+                                    </div>
+                                    <div class="house__item-price fz__20">
+                                        $ 35.000.000
+                                    </div>
+                                    <div class="house__item-heuman">
+                                        <div class="house__item-icon">
+                                            <img src="@img/dianne.svg" alt="dianne" loading="lazy">
+                                        </div>
+                                        <div class="house__item-wrapper">
+                                            <div class="house__item-name fz__18">
+                                                Dianne Russell
+                                            </div>
+                                            <div class="house__item-city fz__14-2">
+                                                Manchester, Kentucky
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="house__item">
+                                    <div class="house__img">
+                                        <img class="house__img-main" src="@img/house_2.png" alt="house_2" loading="lazy">
+                                        <div class="house__newhouse">
+                                            <img src="@img/newhouse.svg" alt="newhouse" loading="lazy">
+                                            <p>New house</p>
+                                        </div>
+                                    </div>
+                                    <div class="house__item-title fz__24">
+                                        Woodlandside
+                                    </div>
+                                    <div class="house__item-price fz__20">
+                                        $ 20.000.000
+                                    </div>
+                                    <div class="house__item-heuman">
+                                        <div class="house__item-icon">
+                                            <img src="@img/robert.svg" alt="robert" loading="lazy">
+                                        </div>
+                                        <div class="house__item-wrapper">
+                                            <div class="house__item-name fz__18">
+                                                Robert Fox
+                                            </div>
+                                            <div class="house__item-city fz__14-2">
+                                                Dr. San Jose, South Dakota
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="house__item">
+                                    <div class="house__img">
+                                        <img class="house__img-main" src="@img/house_2.png" alt="house_2" loading="lazy">
+                                        <div class="house__newhouse">
+                                            <img src="@img/newhouse.svg" alt="newhouse" loading="lazy">
+                                            <p>New house</p>
+                                        </div>
+                                    </div>
+                                    <div class="house__item-title fz__24">
+                                        Woodlandside
+                                    </div>
+                                    <div class="house__item-price fz__20">
+                                        $ 20.000.000
+                                    </div>
+                                    <div class="house__item-heuman">
+                                        <div class="house__item-icon">
+                                            <img src="@img/robert.svg" alt="robert" loading="lazy">
+                                        </div>
+                                        <div class="house__item-wrapper">
+                                            <div class="house__item-name fz__18">
+                                                Robert Fox
+                                            </div>
+                                            <div class="house__item-city fz__14-2">
+                                                Dr. San Jose, South Dakota
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="house__item">
+                                    <div class="house__img">
+                                        <img class="house__img-main" src="@img/house_3.png" alt="house_3" loading="lazy">
+                                        <div class="house__bestdeal">
+                                            <img src="@img/bestdeal.svg" alt="bestdeal" loading="lazy">
+                                            <p>Best Deals</p>
+                                        </div>
+                                    </div>
+                                    <div class="house__item-title fz__24">
+                                        The Old Lighthouse
+                                    </div>
+                                    <div class="house__item-price fz__20">
+                                        $ 44.000.000
+                                    </div>
+                                    <div class="house__item-heuman">
+                                        <div class="house__item-icon">
+                                            <img src="@img/ronald.svg" alt="ronald" loading="lazy">
+                                        </div>
+                                        <div class="house__item-wrapper">
+                                            <div class="house__item-name fz__18">
+                                                Ronald Richards
+                                            </div>
+                                            <div class="house__item-city fz__14-2">
+                                                Santa Ana, Illinois
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="house__item">
-                            <div class="house__img">
-                                <img src="@img/house_3.png" alt="house_3">
-                                <div class="house__bestdeal">
-                                    <img src="@img/bestdeal.svg" alt="bestdeal">
-                                    <p>Best Deals</p>
-                                </div>
-                            </div>
-                            <div class="house__item-title fz__24">
-                                The Old Lighthouse
-                            </div>
-                            <div class="house__item-price fz__20">
-                                $ 44.000.000
-                            </div>
-                            <div class="house__item-heuman">
-                                <div class="house__item-icon">
-                                    <img src="@img/ronald.svg" alt="ronald">
-                                </div>
-                                <div class="house__item-wrapper">
-                                    <div class="house__item-name fz__18">
-                                        Ronald Richards
+                    </div>
+                    <div class="house__items swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="house__item">
+                                    <div class="house__img">
+                                        <img class="house__img-main" src="@img/house_1.png" alt="house_1" loading="lazy">
+                                        <div class="house__popular">
+                                            <img src="@img/popular.svg" alt="popular" loading="lazy">
+                                            <p>Popular</p>
+                                        </div>
                                     </div>
-                                    <div class="house__item-city fz__14-2">
-                                        Santa Ana, Illinois
+                                    <div class="house__item-title fz__24">
+                                        Roselands House
+                                    </div>
+                                    <div class="house__item-price fz__20">
+                                        $ 35.000.000
+                                    </div>
+                                    <div class="house__item-heuman">
+                                        <div class="house__item-icon">
+                                            <img src="@img/dianne.svg" alt="dianne" loading="lazy">
+                                        </div>
+                                        <div class="house__item-wrapper">
+                                            <div class="house__item-name fz__18">
+                                                Dianne Russell
+                                            </div>
+                                            <div class="house__item-city fz__14-2">
+                                                Manchester, Kentucky
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="house__item">
+                                    <div class="house__img">
+                                        <img class="house__img-main" src="@img/house_2.png" alt="house_2" loading="lazy">
+                                        <div class="house__newhouse">
+                                            <img src="@img/newhouse.svg" alt="newhouse" loading="lazy">
+                                            <p>New house</p>
+                                        </div>
+                                    </div>
+                                    <div class="house__item-title fz__24">
+                                        Woodlandside
+                                    </div>
+                                    <div class="house__item-price fz__20">
+                                        $ 20.000.000
+                                    </div>
+                                    <div class="house__item-heuman">
+                                        <div class="house__item-icon">
+                                            <img src="@img/robert.svg" alt="robert" loading="lazy">
+                                        </div>
+                                        <div class="house__item-wrapper">
+                                            <div class="house__item-name fz__18">
+                                                Robert Fox
+                                            </div>
+                                            <div class="house__item-city fz__14-2">
+                                                Dr. San Jose, South Dakota
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="house__item">
+                                    <div class="house__img">
+                                        <img class="house__img-main" src="@img/house_2.png" alt="house_2" loading="lazy">
+                                        <div class="house__newhouse">
+                                            <img src="@img/newhouse.svg" alt="newhouse" loading="lazy">
+                                            <p>New house</p>
+                                        </div>
+                                    </div>
+                                    <div class="house__item-title fz__24">
+                                        Woodlandside
+                                    </div>
+                                    <div class="house__item-price fz__20">
+                                        $ 20.000.000
+                                    </div>
+                                    <div class="house__item-heuman">
+                                        <div class="house__item-icon">
+                                            <img src="@img/robert.svg" alt="robert" loading="lazy">
+                                        </div>
+                                        <div class="house__item-wrapper">
+                                            <div class="house__item-name fz__18">
+                                                Robert Fox
+                                            </div>
+                                            <div class="house__item-city fz__14-2">
+                                                Dr. San Jose, South Dakota
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="house__item">
+                                    <div class="house__img">
+                                        <img class="house__img-main" src="@img/house_2.png" alt="house_2" loading="lazy">
+                                        <div class="house__newhouse">
+                                            <img src="@img/newhouse.svg" alt="newhouse" loading="lazy">
+                                            <p>New house</p>
+                                        </div>
+                                    </div>
+                                    <div class="house__item-title fz__24">
+                                        Woodlandside
+                                    </div>
+                                    <div class="house__item-price fz__20">
+                                        $ 20.000.000
+                                    </div>
+                                    <div class="house__item-heuman">
+                                        <div class="house__item-icon">
+                                            <img src="@img/robert.svg" alt="robert" loading="lazy">
+                                        </div>
+                                        <div class="house__item-wrapper">
+                                            <div class="house__item-name fz__18">
+                                                Robert Fox
+                                            </div>
+                                            <div class="house__item-city fz__14-2">
+                                                Dr. San Jose, South Dakota
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="house__item">
+                                    <div class="house__img">
+                                        <img class="house__img-main" src="@img/house_2.png" alt="house_2" loading="lazy">
+                                        <div class="house__newhouse">
+                                            <img src="@img/newhouse.svg" alt="newhouse" loading="lazy">
+                                            <p>New house</p>
+                                        </div>
+                                    </div>
+                                    <div class="house__item-title fz__24">
+                                        Woodlandside
+                                    </div>
+                                    <div class="house__item-price fz__20">
+                                        $ 20.000.000
+                                    </div>
+                                    <div class="house__item-heuman">
+                                        <div class="house__item-icon">
+                                            <img src="@img/robert.svg" alt="robert" loading="lazy">
+                                        </div>
+                                        <div class="house__item-wrapper">
+                                            <div class="house__item-name fz__18">
+                                                Robert Fox
+                                            </div>
+                                            <div class="house__item-city fz__14-2">
+                                                Dr. San Jose, South Dakota
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="house__item">
-                            <div class="house__img">
-                                <img src="@img/house_1.png" alt="house_1">
-                                <div class="house__popular">
-                                    <img src="@img/popular.svg" alt="popular">
-                                    <p>Popular</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail">
+                <div class="detail__blur">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="detail__container container">
+                    <div class="detail__wrapper">
+                        <div class="detail__item">
+                            <div class="detail__divider divider">
+                                <div class="divider__line"></div>
+                                <div class="divider__text">Ready to Sell!</div>
+                            </div>
+                            <div class="detail__item-wrapper">
+                                <div class="detail__title fz__32">Let’s tour and see our house!</div>
+                                <div class="detail__subtitle fz__16">
+                                    Houses recommended by our partners that have been curated to become the home of your dreams!
                                 </div>
-                            </div>
-                            <div class="house__item-title fz__24">
-                                Cosmo's House
-                            </div>
-                            <div class="house__item-price fz__20">
-                                $ 22.000.000
-                            </div>
-                            <div class="house__item-heuman">
-                                <div class="house__item-icon">
-                                    <img src="@img/jenny.svg" alt="jenny">
-                                </div>
-                                <div class="house__item-wrapper">
-                                    <div class="house__item-name fz__18">
-                                        Jenny Wilson
+                                <div class="detail__detail fz__16-3">House Detail</div>
+                                <div class="detail__details">
+                                    <div class="detail__details-wrapper">
+                                        <div class="detail__details-item">
+                                            <img src="@img/bedrooms.svg" alt="icon" class="detail__details-icon">
+                                            <p class="detail__details-text fz__16-2">4 Bedrooms</p>
+                                        </div>
+                                        <div class="detail__details-item">
+                                            <img src="@img/batrooms.svg" alt="icon" class="detail__details-icon">
+                                            <p class="detail__details-text fz__16-2">2 Bathrooms</p>
+                                        </div>
                                     </div>
-                                    <div class="house__item-city fz__14-2">
-                                        Preston Rd. Inglewood, Maine 98380
+                                    <div class="detail__details-wrapper">
+                                        <div class="detail__details-item">
+                                            <img src="@img/carport.svg" alt="icon" class="detail__details-icon">
+                                            <p class="detail__details-text fz__16-2">1 Carport</p>
+                                        </div>
+                                        <div class="detail__details-item">
+                                            <img src="@img/floors.svg" alt="icon" class="detail__details-icon">
+                                            <p class="detail__details-text fz__16-2">2 Floors</p>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="detail__line"></div>
+                                <div class="detail__contact">
+                                    <div class="detail__heuman">
+                                        <div class="detail__heuman-info">
+                                            <img src="@img/dianne.svg" alt="icon" class="detail__heuman-icon">
+                                            <div class="detail__heuman-name">
+                                                <p class="fz__18">Dianne Russell</p>
+                                                <p class="fz__16">Manager Director</p>
+                                            </div>
+                                        </div>
+                                        <button class="detail__contact-btn">
+                                            <img src="@img/contact.svg" alt="contact">
+                                            Contact Now
+                                        </button>
+                                    </div>
+                                    
+                                </div>
                             </div>
+                        </div>
+                        <div class="detail__item">
+                            <dev class="detail__video">
+                                <video preload="none" controls poster="img/video-img.svg" class="detail__video-item">
+                                    <source style="width: 530px" src="img/houter-video-webm.webm" type="video/webm">
+                                    <source src="img/houter-video.mp4" type="video/mp4">
+                                </video>
+                            </dev>
                         </div>
                     </div>
                 </div>
