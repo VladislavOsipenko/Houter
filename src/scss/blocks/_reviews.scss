@@ -1,0 +1,82 @@
+.reviews {
+    margin-top: 12rem;
+    &__divider {
+        flex-direction: column;
+    }
+
+    &__title {
+        margin-top: 1.2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__swiper {
+        margin-top: 4rem;
+    }
+
+    &__wrapper {
+    }
+
+    &__slide {
+    }
+
+    &__item {
+        width: 74rem;
+        height: 40rem;
+        position: relative;
+    }
+
+    &__img {
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        z-index: -2;
+        img {
+            width: inherit;
+            height: inherit;
+            
+        }
+    }
+
+    &__info {
+    }
+
+    &__info-titile {
+    }
+
+    &__info-subtitle {
+    }
+
+    &__info-rating {
+    }
+
+    &__info-heuman {
+    }
+
+    &__info-icon {
+    }
+
+    &__info-name {
+    }
+
+    &__info-grade {
+    }
+
+    &__info-star {
+    }
+
+    &__info-number {
+    }
+}
+.divider {
+
+    &__line {
+    }
+
+    &__text {
+    }
+}
+
+
+.swiper-pagination {
+}

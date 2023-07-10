@@ -54,6 +54,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    const swiper_3 = new Swiper('.reviews__swiper', {
+        modules: [Navigation, Pagination],
+        centeredSlides: true,
+    });
+
     $('ul.house__tabs').on('click', 'li:not(.house__tab_active)', function() {
         $(this)
           .addClass('house__tab_active').siblings().removeClass('house__tab_active')

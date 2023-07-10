@@ -1,7 +1,36 @@
 .detail {
     margin-top: 12rem;
-
+    position: relative;
     &__blur {
+        position: absolute;
+        top: -35%;
+        right: 0;
+        z-index: -1;
+        div {
+            &:first-child {
+                top: 0;
+                width: 43.8rem;
+                height: 49.4rem;
+                transform: rotate(90deg);
+                flex-shrink: 0;
+                background: #FF9882;
+                opacity: 0.30000001192092896;
+                filter: blur(60px);
+            }
+            &:last-child {
+                position: absolute;
+                top: 20%;
+                z-index: -2;
+                width: 43.8rem;
+                display: flex;
+                height: 49.4rem;
+                transform: rotate(90deg);
+                flex-shrink: 0;
+                background: #FFFA82;
+                opacity: 0.30000001192092896;
+                filter: blur(60px);
+            }
+        }
     }
 
     &__container {
@@ -121,6 +150,10 @@
 
 @media (max-width: 1024px) {
     .detail {
+        &__blur {
+            top: 40%;
+        }
+        
         &__wrapper {
             flex-direction: column;
             justify-content: center;
@@ -146,6 +179,9 @@
         &__details {
             width: 38rem;
         }
+        &__blur {
+            top: 50%;
+        }
     }
 }
 
@@ -162,6 +198,17 @@
            flex-direction: column;
            justify-content: center;
            align-items: center;
+        }
+        &__blur {
+            top: 60%;
+            div {
+                &:first-child {
+                    height: 25rem;
+                }
+                &:last-child {
+                    height: 30rem;
+                }
+            }
         }
     }
 }

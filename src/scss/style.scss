@@ -165,8 +165,16 @@ html {
     flex-grow: 1;
 }
 
+.fz__14-5 {
+    color: var(--neutral-900, #0E1735);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+}
+
 @import "blocks/_header";
 @import "blocks/_main";
 @import "blocks/_house";
 @import "blocks/_detail";
+@import "blocks/_reviews";
 
