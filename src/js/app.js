@@ -56,7 +56,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const swiper_3 = new Swiper('.reviews__swiper', {
         modules: [Navigation, Pagination],
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
         centeredSlides: true,
+        slidesPerView: 1.85,
+        initialSlide: 1,
+        breakpoints: {
+            1024: {
+                slidesPerView: 1.85,
+            },
+            900: {
+                slidesPerView: 1.01,
+            },
+            500: {
+                slidesPerView: 1.01,
+            },
+            300: {
+                slidesPerView: 0.98,
+            },
+        }
     });
 
     $('ul.house__tabs').on('click', 'li:not(.house__tab_active)', function() {
