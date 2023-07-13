@@ -176,6 +176,15 @@ html {
   color: #0E1735;
 }
 
+.fz__24-2 {
+  color: var(--mrt-app-headline, #1B1C57);
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.2rem;
+  text-transform: capitalize;
+}
+
 .fz__20 {
   font-weight: 500;
   font-size: 2rem;
@@ -1171,6 +1180,9 @@ html {
   border-radius: 100%;
   transition: 0.1s all;
 }
+.swiper-pagination-bullet:first-child {
+  margin-left: 0;
+}
 .swiper-pagination-bullet:hover {
   transition: 0.1s all;
   background: #828386;
@@ -1235,4 +1247,117 @@ html {
   .reviews__info-icon {
     top: -63%;
   }
+}
+.artikels {
+  margin-top: 12rem;
+  position: relative;
+}
+.artikels__blur {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+.artikels__blur div:first-child {
+  width: 43.8rem;
+  height: 49.4rem;
+  transform: rotate(90deg) translateY(40%);
+  background: #82FFE8;
+  opacity: 0.3000000119;
+  filter: blur(60px);
+}
+.artikels__blur div:last-child {
+  width: 43.8rem;
+  height: 49.4rem;
+  transform: rotate(90deg) translateX(-60%) translateY(40%);
+  background: #C8FF82;
+  opacity: 0.3000000119;
+  filter: blur(60px);
+}
+.artikels__title {
+  text-align: center;
+  margin-top: 1.2rem;
+}
+.artikels__btn {
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.artikels__btn button {
+  cursor: pointer;
+  padding: 1.2rem 1.6rem;
+  align-items: center;
+  gap: 1.6rem;
+  border: none;
+  border-radius: 3.2rem;
+  background: var(--green-500, #10B981);
+  color: #FFF;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.2rem;
+  transition: 0.2s all;
+}
+.artikels__btn button:hover {
+  transition: 0.2s all;
+  transform: scale(1.05);
+}
+.artikels__wrapper {
+  margin-top: 4.2rem;
+  display: flex;
+  gap: 6.8rem;
+}
+.artikels__item:first-child {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4.4rem;
+}
+.artikels__item-block {
+  display: flex;
+  gap: 3.2rem;
+}
+.artikels__item-heuman {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.artikels__item-heuman img {
+  position: absolute;
+  left: -3.3rem;
+  top: -2.4rem;
+  width: 10.2rem;
+}
+.artikels__item-heuman p {
+  margin-top: 0.6rem;
+  padding-left: 4.5rem;
+}
+.artikels #artikels-icon-1 {
+  width: 3.2rem;
+  top: 0rem;
+  left: 0;
+}
+.artikels #artikels-icon-2 {
+  left: -3.5rem;
+}
+.artikels__item-descr {
+  margin-top: 1.2rem;
+}
+.artikels__item-time {
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+.artikels__item-info2 {
+  margin-top: 3rem;
+}
+.artikels__item-title {
+  margin-top: 1.8rem;
+}
+.artikels__item-descr2 {
+  margin-top: 1.2rem;
+  width: 56rem;
 }

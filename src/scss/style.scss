@@ -68,6 +68,15 @@ html {
     color: #0E1735;
 }
 
+.fz__24-2 {
+    color: var(--mrt-app-headline, #1B1C57);
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.2rem; 
+    text-transform: capitalize;
+}
+
 .fz__20 {
     font-weight: 500;
     font-size: 2rem;
@@ -177,4 +186,5 @@ html {
 @import "blocks/_house";
 @import "blocks/_detail";
 @import "blocks/_reviews";
+@import "blocks/_artikels";
 

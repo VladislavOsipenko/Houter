@@ -143,6 +143,9 @@
     background: #E0E3EB;
     border-radius: 100%;
     transition: .1s all ;
+    &:first-child {
+        margin-left: 0;
+    }
     &:hover {
         transition: .1s all ;
         background: #828386;
