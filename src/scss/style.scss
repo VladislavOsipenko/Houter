@@ -146,6 +146,22 @@ html {
     color: #888B97;
 }
 
+.fz__14-footer {
+    color: var(--neutral-500, #888B97);
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    list-style-type: none;
+    text-decoration: none;
+    transition: .2s all;
+    &:hover {
+        transition: .2s all;
+        color: #0E1735;
+    }
+}
+
 .fz__14-2 {
     font-weight: 400;
     font-size: 1.4rem;
@@ -187,4 +203,5 @@ html {
 @import "blocks/_detail";
 @import "blocks/_reviews";
 @import "blocks/_artikels";
-
+@import "blocks/_subscribe";
+@import "blocks/_footer";
