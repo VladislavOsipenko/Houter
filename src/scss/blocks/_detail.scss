@@ -53,18 +53,50 @@
     }
 
     &__divider {
+        transform: translateX(-100%);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
     }
 
     &__title {
         margin-top: 1.2rem;
+        transform: translateX(-100%);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
     }
 
     &__subtitle {
         margin-top: 1.6rem;
+        transform: translateX(-100%);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
     }
 
     &__detail {
         margin-top: 1.6rem;
+        transform: translateX(-100%);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
     }
 
     &__details {
@@ -79,6 +111,26 @@
         display: flex;
         flex-direction: column;
         row-gap: 1.6rem;
+        &:first-child {
+            transform: translateX(-100%);
+            transition: 1s all;
+            opacity: 0;
+            &._active {
+                opacity: 1;
+                transition: 1s all;
+                transform: translateX(0);
+            }
+        }
+        &:last-child {
+            transform: translateX(100%);
+            transition: 1s all;
+            opacity: 0;
+            &._active {
+                opacity: 1;
+                transition: 1s all;
+                transform: translateX(0);
+            }
+        }
     }
 
     &__details-item {
@@ -87,6 +139,7 @@
     }
 
     &__details-icon {
+        
     }
 
     &__details-text {
@@ -113,9 +166,25 @@
     }
 
     &__heuman-icon {
+        transform: translateX(-100%) rotate(-90deg);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0) rotate(0);
+        }
     }
 
     &__heuman-name {
+        transform: translateY(100%);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
     }
 
     &__contact-btn {
@@ -131,7 +200,14 @@
         font-size: 1.4rem;
         font-weight: 600;
         line-height: 2.2rem;
-        transition: .2s all linear;
+        transform: translateX(100%);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
         &:hover {
             transition: .2s all linear;
             transform: scale(1.05);

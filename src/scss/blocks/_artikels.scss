@@ -32,6 +32,14 @@
     &__title {
         text-align: center;
         margin-top: 1.2rem;
+        transform: scale(0);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: scale(1);
+        }
     }
 
     &__btn {
@@ -39,6 +47,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transform: scale(0);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: scale(1);
+        }
         button {
             cursor: pointer;
             padding: 1.2rem 1.6rem;
@@ -53,6 +69,7 @@
             font-weight: 600;
             line-height: 2.2rem; 
             transition: .2s all;
+
             &:hover {
                 transition: .2s all;
                 transform: scale(1.05);
@@ -81,10 +98,18 @@
     }
 
     &__item-img {
-
+        transform: translateX(-100%);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
     }
 
     &__item-info {
+        overflow: hidden;
     }
 
     &__item-heuman {
@@ -97,10 +122,27 @@
             left: -3.3rem;
             top: -2.4rem;
             width: 10.2rem;
+            transform: scale(0) rotate(-90deg);
+            transition: 1s all;
+            opacity: 0;
+            &._active {
+                opacity: 1;
+                transition: 1s all;
+                transform: scale(1) rotate(0);
+            }
+            
         }
         p {
             margin-top: .6rem;
             padding-left: 4.5rem;
+            transform: translateX(100%);
+            transition: 1s all;
+            opacity: 0;
+            &._active {
+                opacity: 1;
+                transition: 1s all;
+                transform: translateX(0);
+            }
         }
     }
     #artikels-icon-1 {
@@ -114,6 +156,14 @@
 
     &__item-descr {
         margin-top: 1.2rem;
+        transform: translateX(-100%);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
     }
 
     &__item-time {
@@ -125,13 +175,30 @@
     }
 
     &__item-clock {
+        transform: scale(0) rotate(-90deg);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: scale(1) rotate(0deg);
+        }
     }
 
     &__item-date {
+        transform: translateX(100%);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
     }
 
     &__item-info2 {
         margin-top: 3rem;
+        overflow: hidden;
     }
 
     &__item-block2 {

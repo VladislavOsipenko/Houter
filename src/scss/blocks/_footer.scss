@@ -1,7 +1,38 @@
 .footer {
-    margin-top: 12rem;
-    margin-bottom: 12rem;
+    // margin-top: 12rem;
+    // margin-bottom: 12rem;
+    min-height: 42rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
     &__blur {
+        position: absolute;
+        right: -30%;
+        bottom: -50%;
+        z-index: -2;
+        display: flex;
+        div {
+            &:first-child {
+                width: 43.8rem;
+                height: 49.4rem;
+                transform: rotate(90deg);
+                flex-shrink: 0;
+                background: #B9FF82;
+                opacity: 0.30000001192092896;
+                filter: blur(60px);
+            }
+            &:last-child {
+                width: 43.8rem;
+                height: 49.4rem;
+                transform: rotate(90deg);
+                flex-shrink: 0;
+                background: #82BBFF;
+                opacity: 0.30000001192092896;
+                filter: blur(60px);
+            }
+        }
     }
 
     &__container {
@@ -29,6 +60,14 @@
 
     &__descr {
         margin-top: 1.6rem;
+        transform: translateX(100%);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
     }
 
     &__social {
@@ -39,6 +78,14 @@
     }
 
     &__link {
+        transform: scale(0) rotate(-180deg);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: scale(1) rotate(0);
+        }
         svg {
             path {
                 transition: .2s all;
@@ -66,6 +113,7 @@
 
 @media (max-width: 1024px) {
     .footer {
+        margin-top: 9rem;
         &__wrapper {
             flex-direction: column;
             justify-content: center;
@@ -77,11 +125,20 @@
 
 @media (max-width: 768px) {
     .footer {
+        &__blur {
+            left: -160%;
+            bottom: 10%;
+        }
         &__item {
             &:last-child {
                 gap: 2rem;
                 flex-wrap: wrap;
             }
         }
+    }
+}
+@media (max-width: 768px) {
+    .footer {
+        margin-bottom: 3rem;
     }
 }

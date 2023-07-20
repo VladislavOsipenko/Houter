@@ -2,12 +2,28 @@
     margin-top: 12rem;
     &__divider {
         flex-direction: column;
+        transform: scale(0);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: scale(1);
+        }
     }
 
     &__title {
         margin-top: 1.2rem;
         display: flex;
         justify-content: center;
+        transform: scale(0);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: scale(1);
+        }
     }
 
     &__swiper {
@@ -42,6 +58,9 @@
         width: inherit;
         height: inherit;
         z-index: -1;
+        picture {
+            width: inherit;
+        }
         img {
             width: inherit;
             height: inherit;
@@ -63,12 +82,29 @@
         border-radius: 1.6rem;
         background: #FFF;
         box-shadow: 0px .9rem 3.2rem 0px rgba(89, 92, 219, 0.05);
+        overflow: hidden;
     }
 
     &__info-titile {
+        transform: translateX(-100%);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translate(0);
+        }
     }
 
     &__info-subtitle {
+        transform: translateX(-100%);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translate(0);
+        }
     }
 
     &__info-rating {
@@ -89,6 +125,14 @@
         position: absolute;
         left: -15%;
         top: -40%;
+        transform: translateX(-100%) rotate(-90deg);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0) rotate(0);
+        }
         img {
             width: 100%;
         }
@@ -96,6 +140,14 @@
 
     &__info-name {
         padding-left: 6rem;
+        transform: translateY(100%);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateY(0);
+        }
     }
 
     &__info-grade {
@@ -106,6 +158,14 @@
     }
 
     &__info-star {
+        transform: scale(0);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: scale(1);
+        }
     }
 
     &__info-number {
@@ -114,6 +174,14 @@
         font-style: normal;
         font-weight: 600;
         line-height: 2.8rem;
+        transform: translateX(100%);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 3s all;
+            transform: translateX(0);
+        }
     }
 }
 .divider {
@@ -202,6 +270,7 @@
         }
         &__info {
             width: 25rem;
+            height: 34rem;
             text-align: center;
             &-icon {
                 left: 0;

@@ -67,6 +67,14 @@
         align-items: center;
         margin-top: 4.5rem;
         gap: 1rem;
+        transform: translateX(-100%);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
     }
 
     &__logo-text {
@@ -77,7 +85,7 @@
     }
 
     &__title {
-        width: 42rem;
+        width: 40rem;
         margin-top: 10rem;
         color: #1B1C57;
         font-size: 40px;
@@ -85,19 +93,44 @@
         font-weight: 600;
         line-height: normal;
         text-transform: capitalize;
+        transform: translateX(-100%);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
         span {
             -webkit-text-stroke: 1px #1B1C57;
             -webkit-text-fill-color: transparent;
         }
+        
     }
 
     &__subtitle {
         width: 51rem;
+        transform: translateX(-100%);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
     }
 
     &__form {
         margin-top: 3.2rem;
         position: relative;
+        transform: translateX(-100%);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
     }
 
     &__form-local {
@@ -144,6 +177,14 @@
 
     &__secondtitle {
         margin-top: 3.2rem;
+        transform: translateX(-100%);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
     }
 
     &__company {
@@ -153,6 +194,14 @@
     }
 
     &__company-item {
+        transform: scale(0);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: scale(1);
+        }
     }
 
     &__menu-wrapper {
@@ -181,6 +230,14 @@
         &:hover {
             transform: scale(1.05);
             transition: .2s all;
+        }
+        transform: scale(0);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: scale(1);
         }
     }
 
@@ -212,6 +269,14 @@
             transition: .2s all;
             transform: scale(1.05);
         }
+        transform: scale(0);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform:scale(1);
+        }
     }
 
     &__overflow {
@@ -235,6 +300,14 @@
         border-radius: 3.2rem;
         background: #FFF;
         box-shadow: 0px 1.1rem 4.8rem 0px rgba(51, 51, 51, 0.06);
+        transform: scale(0);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform:scale(1);
+        }
         &:nth-child(1) {
             width: 26.9rem;
         }

@@ -16,28 +16,59 @@
             position: relative;
             z-index: 3;
             img {
-               
                 &:nth-child(1) {
                     position: absolute;
                     top: 3.8rem;
                     left: 4.4rem;
+                    transform: scale(0) rotate(-90deg);
+                    transition: 1s all;
+                    opacity: 0;
+                    &._active {
+                        opacity: 1;
+                        transition: 1s all;
+                        transform: scale(1) rotate(0);
+                    }
                 }
                 &:nth-child(2) {
                     position: absolute;
                     top: 17.8rem;
                     left: 19.5rem;
                     z-index: -3;
+                    transform: scale(0) rotate(-90deg);
+                    transition: 1s all;
+                    opacity: 0;
+                    &._active {
+                        opacity: 1;
+                        transition: 1s all;
+                        transform: scale(1) rotate(0);
+                    }
                 }
                 &:nth-child(3) {
                     position: absolute;
                     top: 7.1rem;
                     left: 20.4rem;
+                    transform: scale(0) rotate(-90deg);
+                    transition: 1s all;
+                    opacity: 0;
+                    &._active {
+                        opacity: 1;
+                        transition: 1s all;
+                        transform: scale(1) rotate(0);
+                    }
                     
                 }
                 &:nth-child(4) {
                     position: absolute;
                     top: 17.3rem;
                     left: 6.7rem;
+                    transform: scale(0) rotate(-90deg);
+                    transition: 1s all;
+                    opacity: 0;
+                    &._active {
+                        opacity: 1;
+                        transition: 1s all;
+                        transform: scale(1) rotate(0);
+                    }
                 }
             }
 		}
@@ -65,10 +96,26 @@
 		&__title {
             text-align: center;
             z-index: 2;
+            transform: scale(0);
+            transition: 1s all;
+            opacity: 0;
+            &._active {
+                opacity: 1;
+                transition: 1s all;
+                transform: scale(1);
+            }
 		}
 
 		&__form {
             position: relative;
+            transform: scale(0);
+            transition: 1s all;
+            opacity: 0;
+            &._active {
+                opacity: 1;
+                transition: 1s all;
+                transform: scale(1);
+            }
 		}
 
 		&__form-mail {
@@ -126,21 +173,53 @@
                     position: absolute;
                     top: 4.4rem;
                     right: 20rem;
+                    transform: scale(0) rotate(-90deg);
+                    transition: 1s all;
+                    opacity: 0;
+                    &._active {
+                        opacity: 1;
+                        transition: 1s all;
+                        transform: scale(1) rotate(0);
+                    }
                 }
                 &:nth-child(2) {
                     position: absolute;
                     top: 19.7rem;
                     right: 7.3rem;
+                    transform: scale(0) rotate(-90deg);
+                    transition: 1s all;
+                    opacity: 0;
+                    &._active {
+                        opacity: 1;
+                        transition: 1s all;
+                        transform: scale(1) rotate(0);
+                    }
                 }
                 &:nth-child(3) {
                     position: absolute;
                     top: 10.7rem;
                     right: 8.2rem;
+                    transform: scale(0) rotate(-90deg);
+                    transition: 1s all;
+                    opacity: 0;
+                    &._active {
+                        opacity: 1;
+                        transition: 1s all;
+                        transform: scale(1) rotate(0);
+                    }
                 }
                 &:nth-child(4) {
                     position: absolute;
                     top: 14.3rem;
                     right: 20rem;
+                    transform: scale(0) rotate(-90deg);
+                    transition: 1s all;
+                    opacity: 0;
+                    &._active {
+                        opacity: 1;
+                        transition: 1s all;
+                        transform: scale(1) rotate(0);
+                    }
                 }
             }
 		}
